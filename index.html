@@ -25,7 +25,7 @@
         <h2 class="block-title">1. Profile Card</h2>
         <div class="row justify-content-center">
           <div class="col-sm-8 col-md-6">
-            <div id="profileBox" class="profile-box">
+            <div id="profileBox" class="profile-box" tabindex="0" role="button" aria-label="Interactive profile card">
               <img id="profileImg" src="images/profile.svg" alt="Profile illustration" class="profile-img">
               <h3 id="profileName">Abishai Jaron</h3>
               <p id="profileRole" class="role-line">Full Stack Developer Trainee</p>
@@ -39,10 +39,12 @@
       <section class="section-block">
         <h2 class="block-title">2. Interactive Paragraph</h2>
         <div class="text-box-panel">
-          <p id="hoverParagraph">Hover here to change this sentence.</p>
+          <p id="hoverParagraph" tabindex="0" role="button" aria-label="Interactive paragraph">
+             Hover here to change this sentence.
+          </p>
         </div>
       </section>
-
+      
       <!-- Demo 3: Tooltip Button -->
       <section class="section-block">
         <h2 class="block-title">3. Tooltip Button</h2>
