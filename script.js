@@ -81,3 +81,17 @@ tipButton.addEventListener("mouseenter", onTipOver);
 tipButton.addEventListener("mouseleave", onTipOut);
 tipButton.addEventListener("focus", onTipOver);
 tipButton.addEventListener("blur", onTipOut);
+
+const resetButton = document.getElementById("resetButton");
+
+function resetDemonstrations() {
+  profileBox.classList.remove("hovered");
+  profileText.textContent = defaultProfileText;
+
+  hoverParagraph.classList.remove("active");
+  hoverParagraph.textContent = defaultParaText;
+
+  tipText.classList.remove("show");
+}
+
+resetButton.addEventListener("click", resetDemonstrations);

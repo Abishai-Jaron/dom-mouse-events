@@ -225,3 +225,30 @@ body {
     width: min(220px, 80vw);
   }
 }
+
+.reset-panel {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 30px;
+}
+
+.reset-btn {
+  padding: 9px 18px;
+  border: 1px solid var(--line);
+  background-color: #FFFFFF;
+  color: var(--ink);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background-color: var(--ink);
+  color: #FFFFFF;
+}
+
+.reset-btn:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
