@@ -29,7 +29,9 @@
               <img id="profileImg" src="images/profile.svg" alt="Profile illustration" class="profile-img">
               <h3 id="profileName">Abishai Jaron</h3>
               <p id="profileRole" class="role-line">Full Stack Developer Trainee</p>
-              <p id="profileText" class="profile-text">Move the pointer over this box.</p>
+              <p id="profileText" class="profile-text" aria-live="polite">
+                Move the pointer over this box.
+              </p>
             </div>
           </div>
         </div>
@@ -39,8 +41,14 @@
       <section class="section-block">
         <h2 class="block-title">2. Interactive Paragraph</h2>
         <div class="text-box-panel">
-          <p id="hoverParagraph" tabindex="0" role="button" aria-label="Interactive paragraph">
-             Hover here to change this sentence.
+          <p
+            id="hoverParagraph"
+            tabindex="0"
+            role="button"
+            aria-label="Interactive paragraph"
+            aria-live="polite"
+          >
+            Hover here to change this sentence.
           </p>
         </div>
       </section>
