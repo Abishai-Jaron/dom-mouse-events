@@ -150,6 +150,11 @@ body {
   color: #FFFFFF;
 }
 
+.tip-btn:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
 .tip-text {
   position: absolute;
   bottom: calc(100% + 10px);
