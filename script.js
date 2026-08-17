@@ -3,6 +3,19 @@
    All handlers attached with addEventListener()
    ========================================================= */
 
+/*
+ * DOM Mouse Events Demonstration
+ *
+ * This script demonstrates how DOM elements can respond to
+ * mouse and keyboard interactions using addEventListener().
+ *
+ * Demonstrations:
+ * 1. Profile card interaction
+ * 2. Interactive paragraph
+ * 3. Tooltip button
+ * 4. Reset control
+ */
+
 document.getElementById("yearNow").textContent = new Date().getFullYear();
 
 /* ---------- Demo 1: Profile Card ---------- */
