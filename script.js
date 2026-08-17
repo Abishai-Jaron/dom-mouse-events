@@ -23,10 +23,18 @@ function onProfileOut() {
   profileText.textContent = defaultProfileText;
 }
 
-profileBox.addEventListener("mouseenter", onProfileOver);
-profileBox.addEventListener("mouseleave", onProfileOut);
-profileBox.addEventListener("focus", onProfileOver);
-profileBox.addEventListener("blur", onProfileOut);
+const profileEvents = {
+  enter: ["mouseenter", "focus"],
+  leave: ["mouseleave", "blur"]
+};
+
+profileEvents.enter.forEach((eventName) => {
+  profileBox.addEventListener(eventName, onProfileOver);
+});
+
+profileEvents.leave.forEach((eventName) => {
+  profileBox.addEventListener(eventName, onProfileOut);
+});
 /* ---------- Demo 2: Interactive Paragraph ---------- */
 
 const hoverParagraph = document.getElementById("hoverParagraph");
@@ -44,10 +52,18 @@ function onParaOut() {
   hoverParagraph.classList.remove("active");
 }
 
-hoverParagraph.addEventListener("mouseenter", onParaOver);
-hoverParagraph.addEventListener("mouseleave", onParaOut);
-hoverParagraph.addEventListener("focus", onParaOver);
-hoverParagraph.addEventListener("blur", onParaOut);
+const paragraphEvents = {
+  enter: ["mouseenter", "focus"],
+  leave: ["mouseleave", "blur"]
+};
+
+paragraphEvents.enter.forEach((eventName) => {
+  hoverParagraph.addEventListener(eventName, onParaOver);
+});
+
+paragraphEvents.leave.forEach((eventName) => {
+  hoverParagraph.addEventListener(eventName, onParaOut);
+});
 /* ---------- Demo 3: Tooltip Button ---------- */
 
 const tipButton = document.getElementById("tipButton");
