@@ -50,7 +50,14 @@
         <h2 class="block-title">3. Tooltip Button</h2>
         <div class="tooltip-panel">
           <div class="tooltip-holder">
-            <button type="button" id="tipButton" class="tip-btn">Hover over this button</button>
+            <button
+              type="button"
+              id="tipButton"
+              class="tip-btn"
+              aria-describedby="tipText"
+            >
+               Hover over this button
+            </button>
             <span id="tipText" class="tip-text">A mouseover event revealed this text.</span>
           </div>
         </div>

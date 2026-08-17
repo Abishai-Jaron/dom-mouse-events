@@ -61,5 +61,7 @@ function onTipOut() {
   tipText.classList.remove("show");
 }
 
-tipButton.addEventListener("mouseover", onTipOver);
-tipButton.addEventListener("mouseout", onTipOut);
+tipButton.addEventListener("mouseenter", onTipOver);
+tipButton.addEventListener("mouseleave", onTipOut);
+tipButton.addEventListener("focus", onTipOver);
+tipButton.addEventListener("blur", onTipOut);
