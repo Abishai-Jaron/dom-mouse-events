@@ -23,9 +23,8 @@ function onProfileOut() {
   profileText.textContent = defaultProfileText;
 }
 
-profileBox.addEventListener("mouseover", onProfileOver);
-profileBox.addEventListener("mouseout", onProfileOut);
-
+profileBox.addEventListener("mouseenter", onProfileOver);
+profileBox.addEventListener("mouseleave", onProfileOut);
 /* ---------- Demo 2: Interactive Paragraph ---------- */
 
 const hoverParagraph = document.getElementById("hoverParagraph");
@@ -43,9 +42,8 @@ function onParaOut() {
   hoverParagraph.classList.remove("active");
 }
 
-hoverParagraph.addEventListener("mouseover", onParaOver);
-hoverParagraph.addEventListener("mouseout", onParaOut);
-
+hoverParagraph.addEventListener("mouseenter", onParaOver);
+hoverParagraph.addEventListener("mouseleave", onParaOut);
 /* ---------- Demo 3: Tooltip Button ---------- */
 
 const tipButton = document.getElementById("tipButton");
